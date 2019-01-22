@@ -10,7 +10,7 @@ container.resolve(function(main){
 
     function ShowExpress(){
         const app = express();
-        app.listen(9090, function(){
+        app.listen(process.env.PORT || 9090, function(){
             console.log('Server Start');
         });
 
