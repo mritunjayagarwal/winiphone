@@ -5,10 +5,13 @@
   "main": "container.js",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
     "dependable": "^1.1.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-promise-router": "^3.0.3",
+    "forever": "^0.15.3",
+    "helmet": "^3.15.0",
     "lodash": "^4.17.11"
   },
   "devDependencies": {},

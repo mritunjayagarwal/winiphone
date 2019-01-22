@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
+const helmet = require('helmet');
+const compression = require('compression');
 const container = require('./container');
 
 container.resolve(function(main){
@@ -20,6 +22,9 @@ container.resolve(function(main){
     }
 
     function ConfigureExpress(app){
+        helmet();
+        compression();
+
         app.use(express.static('public'));
         app.use(bodyParser.json());
         app.use(bodyParser.urlencoded({ extended: true}));
