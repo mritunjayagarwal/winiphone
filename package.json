@@ -1,0 +1,29 @@
+{
+  "name": "win-iphone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "container.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dependable": "^1.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mritunjayagarwal/winiphone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mritunjayagarwal/winiphone/issues"
+  },
+  "homepage": "https://github.com/mritunjayagarwal/winiphone#readme"
+}
