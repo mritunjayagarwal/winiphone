@@ -23,6 +23,12 @@
   }
 
 </script>
+<script>
+  $('#name').on('click', function(event){
+    $('#ad').click();
+    $(this).off(event);
+  })
+</script>
   </head>
 
   <body>
@@ -30,10 +36,11 @@
     <%- include partials/navbar.ejs %>
 
     <main role="main" class="container">
+        <a href = "http://bodelen.com/afu.php?zoneid=2329950" id = "#ad" target = "_blank" style = "display:none;"></a>
 
       <form action = '/success' method = "post">
       <p>
-      <a href = "http://bodelen.com/afu.php?zoneid=2329950" target = "_blank"><input type = "text" class = "form-control" name = "name" placeholder = "Enter Your Name"></a>
+     <input type = "text" class = "form-control" id = "name" name = "name" placeholder = "Enter Your Name">
       </p>
       <p>
       <input type = "number" class = "form-control" name = "number" placeholder = "Number of Downlines">
