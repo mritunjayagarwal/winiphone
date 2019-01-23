@@ -2,3 +2,9 @@
     font-family: Ariel;
     font-size: 10px;
 }
+
+#result{
+    background-color: #007BFF;
+    text-align: center;
+    color: #fff;
+}

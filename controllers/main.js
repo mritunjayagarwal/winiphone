@@ -10,8 +10,9 @@ module.exports = function(){
             res.render('index');
         },
         success: function(req, res){
-            const number = (1400/req.body.number)*((req.body.time)/365); 
-            res.json(number.toFixed(2));
+            var number = (1400/req.body.number)*((req.body.time)/365).toFixed(2);
+            const name = req.body.name;
+            res.render('Result.ejs', { result: number, name: name});
         }
     }
 }

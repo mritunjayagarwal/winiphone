@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Modicare Info</title>
+    <title>Result is Here</title>
 
     <link rel = "stylesheet" href = "/css/custom.css">
     <!-- Custom styles for this template -->
@@ -29,20 +29,12 @@
 
     <main role="main" class="container">
 
-    <a href="whatsapp://send?abid=phonenumber&text=https://modicare.herokuapp.com/" style = "background-color: green;color: #fff">whatsapp</a>
-
-      <form action = '/success' method = "post">
-      <p>
-      <input type = "text" class = "form-control" name = "name" placeholder = "Enter Your Name">
-      </p>
-      <p>
-      <input type = "number" class = "form-control" name = "number" placeholder = "Number of Downlines">
-      </p>
-      <p>
-      <input type = "number" class = "form-control" name = "time" placeholder = "Time Assosiated(in months)">
-      </p>
-      <input type = "submit" class = "btn btn-primary form-control">
-      </form>
+   <div id = "result">
+       <h4>Congrats <%= name %>!</h4>
+       <h5>You will become a GBDD in</h5>
+       <%= result %> years
+   </div>
+   <a href="/" style = "margin-top:3px;" class = "btn btn-primary form-control">Try Again</a>
 
     </main><!-- /.container -->
 
