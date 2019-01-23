@@ -21,6 +21,13 @@
     enable_page_level_ads: true
   });
 </script>
+<script>
+  function unlock(){
+    document.getElementById('view').style.display = "block";
+    document.getElementById('hide').style.display = "none";
+  }
+
+</script>
   </head>
 
   <body>
@@ -28,8 +35,6 @@
     <%- include partials/navbar.ejs %>
 
     <main role="main" class="container">
-
-    <a href="whatsapp://send?abid=phonenumber&text=https://modicare.herokuapp.com/" style = "background-color: green;color: #fff">whatsapp</a>
 
       <form action = '/success' method = "post">
       <p>
@@ -41,7 +46,9 @@
       <p>
       <input type = "number" class = "form-control" name = "time" placeholder = "Time Assosiated(in months)">
       </p>
-      <input type = "submit" class = "btn btn-primary form-control">
+      <input type = "submit" id = "view" class = "btn btn-primary form-control" style = "display:none;">
+      <a href="whatsapp://send?abid=phonenumber&text=https://modicare.herokuapp.com/" onclick = "unlock()" id = "hide" class = "form-control" style = "text-align:center;background-color:green;color: #fff">
+       अपना GBDD बनने का समय जानने के लिए इसे 2 व्हाट्सएप ग्रूप या 4 लोगों को शेयर करें| इसे Click करें aur <img src = "/css/images/whatsapp1.png" style = "margin-left:3px;margin-bottom:5px;height:30px;width:30px;margin-top:3px;"></a>
       </form>
 
     </main><!-- /.container -->
