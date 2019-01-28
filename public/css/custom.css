@@ -1,3 +1,7 @@
+body{
+    background-image: url("background1.jpg");
+}
+
 #head{
     font-family: Ariel;
     font-size: 10px;
