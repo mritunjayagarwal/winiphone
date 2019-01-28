@@ -16,3 +16,8 @@ body{
 #hide{
     height:70px;
 }
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
